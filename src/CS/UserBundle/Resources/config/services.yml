@@ -1,0 +1,6 @@
+parameters:
+    cs.user.password_encoder.class: CS\UserBundle\Security\Encoder\PasswordEncoder
+
+services:
+    cs.user.password_encoder:
+        class: %cs.user.password_encoder.class%

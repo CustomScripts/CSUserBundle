@@ -1,0 +1,11 @@
+_login:
+    pattern:  /login
+    defaults: { _controller: CSUserBundle:Login:login }
+
+_security_check:
+    pattern: /login_check
+    defaults: { _controller: CSUserBundle:Login:security_check }
+
+_logout:
+    pattern: /logout
+    defaults: { _controller: CSUserBundle:Login:logout }
