@@ -16,9 +16,9 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony" : "2.2.*",
         "customscripts/core-bundle" : "dev-master"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "CS": "src/"
