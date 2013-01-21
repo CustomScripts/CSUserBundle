@@ -12,7 +12,7 @@
             <directory>./tests</directory>
             <exclude>
                 <directory>./src/CS/UserBundle/Resources</directory>
-                <directory>./src/CS/CoreBundle/Tests</directory>
+                <directory>./src/CS/UserBundle/Tests</directory>
                 <directory>./vendor</directory>
             </exclude>
         </whitelist>
