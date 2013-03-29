@@ -44,7 +44,7 @@ class User implements AdvancedUserInterface, EquatableInterface, \Serializable
      *
      * @ORM\Column(type="string", length=25, unique=true)
      * @Assert\NotBlank()
-     * @Assert\MinLength(limit=3)
+     * @Assert\Length(min=3)
      */
     protected $username;
 

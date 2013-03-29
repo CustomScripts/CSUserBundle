@@ -40,7 +40,7 @@ class Role implements RoleInterface
      *
      * @ORM\Column(name="name", type="string", length=25, unique=true)
      * @Assert\NotBlank()
-     * @Assert\MinLength(limit=3)
+     * @Assert\Length(min=3)
      */
     protected $name;
 
@@ -49,7 +49,7 @@ class Role implements RoleInterface
      *
      * @ORM\Column(name="role", type="string", length=25, unique=true)
      * @Assert\NotBlank()
-     * @Assert\MinLength(limit=3)
+     * @Assert\Length(min=3)
      */
     protected $role;
 
