@@ -50,7 +50,7 @@ class PasswordEncoder extends Pbkdf2PasswordEncoder
     public function isPasswordValid($encoded, $raw, $salt)
     {
         if ($this->supportedPhp) {
-            return password_verify($encoded, $raw);
+            return password_verify($raw, $encoded);
         }
 
         return parent::isPasswordValid($encoded, $raw, $salt);
